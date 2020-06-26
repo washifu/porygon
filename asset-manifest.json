@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/porygon/static/css/main.5f361e03.chunk.css",
+    "main.js": "/porygon/static/js/main.179d0f7e.chunk.js",
+    "main.js.map": "/porygon/static/js/main.179d0f7e.chunk.js.map",
+    "runtime-main.js": "/porygon/static/js/runtime-main.72f2a22f.js",
+    "runtime-main.js.map": "/porygon/static/js/runtime-main.72f2a22f.js.map",
+    "static/js/2.f44e0d5b.chunk.js": "/porygon/static/js/2.f44e0d5b.chunk.js",
+    "static/js/2.f44e0d5b.chunk.js.map": "/porygon/static/js/2.f44e0d5b.chunk.js.map",
+    "index.html": "/porygon/index.html",
+    "precache-manifest.40963a52c402e959702b3da53c700f36.js": "/porygon/precache-manifest.40963a52c402e959702b3da53c700f36.js",
+    "service-worker.js": "/porygon/service-worker.js",
+    "static/css/main.5f361e03.chunk.css.map": "/porygon/static/css/main.5f361e03.chunk.css.map",
+    "static/js/2.f44e0d5b.chunk.js.LICENSE.txt": "/porygon/static/js/2.f44e0d5b.chunk.js.LICENSE.txt",
+    "static/media/logo.svg": "/porygon/static/media/logo.5d5d9eef.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.72f2a22f.js",
+    "static/js/2.f44e0d5b.chunk.js",
+    "static/css/main.5f361e03.chunk.css",
+    "static/js/main.179d0f7e.chunk.js"
+  ]
+}
