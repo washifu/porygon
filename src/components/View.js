@@ -1,9 +1,8 @@
 import React from "react";
 // import * as THREE from "three";
 // import { FBXLoader } from "three/examples/jsm/loaders/FBXLoader";
-import { View3D, Box, GLTF, Plane } from "@standard/view";
-import { DirectionalLight } from "@standard/view/lib";
-// import FBX from "./FBX";
+import { View3D, Box, GLTF, Plane, DirectionalLight } from "@standard/view";
+import FBX from "./FBX";
 
 const View = () => {
   // const loader = new FBXLoader();
