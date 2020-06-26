@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "b2a776c97fc3da194d51e07b37d2af41",
+    "revision": "12bfe489864680731272c77721137ab7",
     "url": "/porygon/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/porygon/static/css/2.6bfe82aa.chunk.css"
   },
   {
-    "revision": "de9659340618cd1021bf",
+    "revision": "7cb7f5280a7cf42c3f7f",
     "url": "/porygon/static/css/main.8857c2fc.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/porygon/static/js/2.4a327e2a.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "de9659340618cd1021bf",
-    "url": "/porygon/static/js/main.3576c3a9.chunk.js"
+    "revision": "7cb7f5280a7cf42c3f7f",
+    "url": "/porygon/static/js/main.c766f16f.chunk.js"
   },
   {
     "revision": "351bf78c35d25bd55bd4",
