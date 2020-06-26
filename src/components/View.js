@@ -2,6 +2,7 @@ import React from "react";
 // import * as THREE from "three";
 // import { FBXLoader } from "three/examples/jsm/loaders/FBXLoader";
 import { View3D, Box, GLTF, Plane } from "@standard/view";
+import { DirectionalLight } from "@standard/view/lib";
 // import FBX from "./FBX";
 
 const View = () => {
@@ -22,13 +23,14 @@ const View = () => {
 
   return (
     <View3D orbitControls backgroundColor="red">
+      <DirectionalLight />
       <Box
         color="white"
         hoverColor="blue"
         onClick={() => console.log("clicked")}
         textureURL="gsball.png"
       />
-      {/* <FBX fbxURL="fbx/Samba Dancing.fbx" /> */}
+      <FBX fbxURL="fbx/Samba Dancing.fbx" />
       <GLTF gltfURL="gltf/flamingo.glb" />
     </View3D>
   );
