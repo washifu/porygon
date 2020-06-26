@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/porygon/precache-manifest.f421a7648d93924135145299dd17e246.js"
+  "/porygon/precache-manifest.55c26c076985e766b534d53981f41fa7.js"
 );
 
 self.addEventListener('message', (event) => {

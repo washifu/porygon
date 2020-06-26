@@ -1,26 +1,26 @@
 {
   "files": {
     "main.css": "/porygon/static/css/main.8857c2fc.chunk.css",
-    "main.js": "/porygon/static/js/main.c766f16f.chunk.js",
-    "main.js.map": "/porygon/static/js/main.c766f16f.chunk.js.map",
+    "main.js": "/porygon/static/js/main.fdc38e35.chunk.js",
+    "main.js.map": "/porygon/static/js/main.fdc38e35.chunk.js.map",
     "runtime-main.js": "/porygon/static/js/runtime-main.72f2a22f.js",
     "runtime-main.js.map": "/porygon/static/js/runtime-main.72f2a22f.js.map",
     "static/css/2.6bfe82aa.chunk.css": "/porygon/static/css/2.6bfe82aa.chunk.css",
-    "static/js/2.4a327e2a.chunk.js": "/porygon/static/js/2.4a327e2a.chunk.js",
-    "static/js/2.4a327e2a.chunk.js.map": "/porygon/static/js/2.4a327e2a.chunk.js.map",
+    "static/js/2.dce74a13.chunk.js": "/porygon/static/js/2.dce74a13.chunk.js",
+    "static/js/2.dce74a13.chunk.js.map": "/porygon/static/js/2.dce74a13.chunk.js.map",
     "index.html": "/porygon/index.html",
-    "precache-manifest.f421a7648d93924135145299dd17e246.js": "/porygon/precache-manifest.f421a7648d93924135145299dd17e246.js",
+    "precache-manifest.55c26c076985e766b534d53981f41fa7.js": "/porygon/precache-manifest.55c26c076985e766b534d53981f41fa7.js",
     "service-worker.js": "/porygon/service-worker.js",
     "static/css/2.6bfe82aa.chunk.css.map": "/porygon/static/css/2.6bfe82aa.chunk.css.map",
     "static/css/main.8857c2fc.chunk.css.map": "/porygon/static/css/main.8857c2fc.chunk.css.map",
-    "static/js/2.4a327e2a.chunk.js.LICENSE.txt": "/porygon/static/js/2.4a327e2a.chunk.js.LICENSE.txt",
+    "static/js/2.dce74a13.chunk.js.LICENSE.txt": "/porygon/static/js/2.dce74a13.chunk.js.LICENSE.txt",
     "static/media/logo.svg": "/porygon/static/media/logo.5d5d9eef.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.72f2a22f.js",
     "static/css/2.6bfe82aa.chunk.css",
-    "static/js/2.4a327e2a.chunk.js",
+    "static/js/2.dce74a13.chunk.js",
     "static/css/main.8857c2fc.chunk.css",
-    "static/js/main.c766f16f.chunk.js"
+    "static/js/main.fdc38e35.chunk.js"
   ]
 }
