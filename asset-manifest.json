@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/static/css/main.8a663e97.chunk.css",
-    "main.js": "/static/js/main.c8dba8be.chunk.js",
-    "main.js.map": "/static/js/main.c8dba8be.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.06910e70.js",
-    "runtime-main.js.map": "/static/js/runtime-main.06910e70.js.map",
-    "static/css/2.6bfe82aa.chunk.css": "/static/css/2.6bfe82aa.chunk.css",
-    "static/js/2.15761b08.chunk.js": "/static/js/2.15761b08.chunk.js",
-    "static/js/2.15761b08.chunk.js.map": "/static/js/2.15761b08.chunk.js.map",
-    "index.html": "/index.html",
-    "precache-manifest.1e608e981e0552b127024b23b002f390.js": "/precache-manifest.1e608e981e0552b127024b23b002f390.js",
-    "service-worker.js": "/service-worker.js",
-    "static/css/2.6bfe82aa.chunk.css.map": "/static/css/2.6bfe82aa.chunk.css.map",
-    "static/css/main.8a663e97.chunk.css.map": "/static/css/main.8a663e97.chunk.css.map",
-    "static/js/2.15761b08.chunk.js.LICENSE.txt": "/static/js/2.15761b08.chunk.js.LICENSE.txt"
+    "main.css": "/porygon/static/css/main.8a663e97.chunk.css",
+    "main.js": "/porygon/static/js/main.54f0174f.chunk.js",
+    "main.js.map": "/porygon/static/js/main.54f0174f.chunk.js.map",
+    "runtime-main.js": "/porygon/static/js/runtime-main.72f2a22f.js",
+    "runtime-main.js.map": "/porygon/static/js/runtime-main.72f2a22f.js.map",
+    "static/css/2.6bfe82aa.chunk.css": "/porygon/static/css/2.6bfe82aa.chunk.css",
+    "static/js/2.15761b08.chunk.js": "/porygon/static/js/2.15761b08.chunk.js",
+    "static/js/2.15761b08.chunk.js.map": "/porygon/static/js/2.15761b08.chunk.js.map",
+    "index.html": "/porygon/index.html",
+    "precache-manifest.63f832e518c55c4cffd73ad383574909.js": "/porygon/precache-manifest.63f832e518c55c4cffd73ad383574909.js",
+    "service-worker.js": "/porygon/service-worker.js",
+    "static/css/2.6bfe82aa.chunk.css.map": "/porygon/static/css/2.6bfe82aa.chunk.css.map",
+    "static/css/main.8a663e97.chunk.css.map": "/porygon/static/css/main.8a663e97.chunk.css.map",
+    "static/js/2.15761b08.chunk.js.LICENSE.txt": "/porygon/static/js/2.15761b08.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.06910e70.js",
+    "static/js/runtime-main.72f2a22f.js",
     "static/css/2.6bfe82aa.chunk.css",
     "static/js/2.15761b08.chunk.js",
     "static/css/main.8a663e97.chunk.css",
-    "static/js/main.c8dba8be.chunk.js"
+    "static/js/main.54f0174f.chunk.js"
   ]
 }
