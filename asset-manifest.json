@@ -1,25 +1,25 @@
 {
   "files": {
     "main.css": "/porygon/static/css/main.8a663e97.chunk.css",
-    "main.js": "/porygon/static/js/main.f366487f.chunk.js",
-    "main.js.map": "/porygon/static/js/main.f366487f.chunk.js.map",
+    "main.js": "/porygon/static/js/main.54f0174f.chunk.js",
+    "main.js.map": "/porygon/static/js/main.54f0174f.chunk.js.map",
     "runtime-main.js": "/porygon/static/js/runtime-main.72f2a22f.js",
     "runtime-main.js.map": "/porygon/static/js/runtime-main.72f2a22f.js.map",
     "static/css/2.6bfe82aa.chunk.css": "/porygon/static/css/2.6bfe82aa.chunk.css",
-    "static/js/2.ddeddc89.chunk.js": "/porygon/static/js/2.ddeddc89.chunk.js",
-    "static/js/2.ddeddc89.chunk.js.map": "/porygon/static/js/2.ddeddc89.chunk.js.map",
+    "static/js/2.15761b08.chunk.js": "/porygon/static/js/2.15761b08.chunk.js",
+    "static/js/2.15761b08.chunk.js.map": "/porygon/static/js/2.15761b08.chunk.js.map",
     "index.html": "/porygon/index.html",
-    "precache-manifest.8321b8a50dc7687f0f8b67343e89114c.js": "/porygon/precache-manifest.8321b8a50dc7687f0f8b67343e89114c.js",
+    "precache-manifest.63f832e518c55c4cffd73ad383574909.js": "/porygon/precache-manifest.63f832e518c55c4cffd73ad383574909.js",
     "service-worker.js": "/porygon/service-worker.js",
     "static/css/2.6bfe82aa.chunk.css.map": "/porygon/static/css/2.6bfe82aa.chunk.css.map",
     "static/css/main.8a663e97.chunk.css.map": "/porygon/static/css/main.8a663e97.chunk.css.map",
-    "static/js/2.ddeddc89.chunk.js.LICENSE.txt": "/porygon/static/js/2.ddeddc89.chunk.js.LICENSE.txt"
+    "static/js/2.15761b08.chunk.js.LICENSE.txt": "/porygon/static/js/2.15761b08.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.72f2a22f.js",
     "static/css/2.6bfe82aa.chunk.css",
-    "static/js/2.ddeddc89.chunk.js",
+    "static/js/2.15761b08.chunk.js",
     "static/css/main.8a663e97.chunk.css",
-    "static/js/main.f366487f.chunk.js"
+    "static/js/main.54f0174f.chunk.js"
   ]
 }
