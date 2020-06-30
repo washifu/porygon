@@ -10,6 +10,7 @@ import {
   GroupProps,
   GroupPropTypes,
   useViewContext,
+  useAnimationFrame,
 } from "@standard/view";
 
 const { useEffect, useMemo, useRef, memo } = React;
@@ -17,6 +18,9 @@ const { useEffect, useMemo, useRef, memo } = React;
 interface FBXProps extends GroupProps {
   fbxPath?: string;
   fbxURL: string;
+  view3DEnvMap: boolean;
+  castShadow: boolean;
+  receiveShadow: boolean;
 }
 
 function updateAllMaterials(
@@ -59,20 +63,24 @@ interface LoadFBXProps {
   group: React.MutableRefObject<any>;
   fbxPath: string;
   fbxURL: string;
+  mixer: React.MutableRefObject<any>;
   envMap: THREE.Texture;
   castShadow: boolean;
   receiveShadow: boolean;
   materialProps: any;
+  actionIndex?: number;
 }
 
 function loadFBX({
   group,
   fbxPath,
   fbxURL,
+  mixer,
   envMap,
   castShadow,
   receiveShadow,
   materialProps,
+  actionIndex = 0,
 }: LoadFBXProps): void {
   // No FBX
   if (fbxURL == null) {
@@ -85,8 +93,8 @@ function loadFBX({
   // FBX
   const fbxLoader = new FBXLoader();
   fbxLoader.setPath(fbxPath);
-  fbxLoader.load(fbxURL, fbx => {
-    if (group.current && fbx.scene && fbx.scene.children) {
+  fbxLoader.load(fbxURL, (fbx: any) => {
+    if (group.current && fbx) {
       // Remove Loading Label or Previous OBJ
       if (group.current.children) {
         group.current.children.map(child => group.current.remove(child));
@@ -98,8 +106,13 @@ function loadFBX({
         updateAllMaterials(color, fbx.scene.children, otherMaterialProps);
       }
 
+      // Animation
+      mixer.current = new THREE.AnimationMixer(fbx);
+      const action = mixer.current.clipAction?.(fbx.animations?.[actionIndex]);
+      action?.play();
+
       // Env Map + Shadows
-      fbx.scene.traverse(mesh => {
+      fbx.traverse(mesh => {
         /* eslint-disable no-param-reassign */
         // @ts-ignore
         if (mesh.isMesh) {
@@ -114,9 +127,11 @@ function loadFBX({
       });
 
       // Add FBX
-      group.current.add(fbx.scene);
+      group.current.add(fbx);
     }
   });
+
+  return;
 }
 
 const FBX: React.FunctionComponent<FBXProps> = function FBX({
@@ -128,6 +143,7 @@ const FBX: React.FunctionComponent<FBXProps> = function FBX({
   ...otherProps
 }) {
   const group = useRef();
+  const mixer = useRef<THREE.AnimationMixer>();
   const { envMap } = useViewContext();
 
   // Material Props
@@ -184,14 +200,15 @@ const FBX: React.FunctionComponent<FBXProps> = function FBX({
     [fbxURL]
   );
 
-  // Load FBX
+  // Load FBX and Animation Mixer
   useEffect(
-    function updateFBX() {
+    function updateFBXandMixer() {
       if (group) {
         loadFBX({
           group,
           fbxPath,
           fbxURL,
+          mixer,
           envMap: _envMap,
           castShadow,
           receiveShadow,
@@ -201,6 +218,18 @@ const FBX: React.FunctionComponent<FBXProps> = function FBX({
     },
     [group, fbxPath, fbxURL, _envMap, castShadow, receiveShadow, materialProps]
   );
+
+  // Animation Mixer Update
+  const clock = new THREE.Clock();
+  useAnimationFrame(function updateMixer() {
+    const delta = clock.getDelta();
+    mixer.current?.update(delta);
+    if (!mixer.current) {
+      console.log("no mixer");
+    } else {
+      console.log("yes mixer");
+    }
+  });
 
   return (
     <Group ref={group} {...otherProps}>

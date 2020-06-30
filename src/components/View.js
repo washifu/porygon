@@ -1,36 +1,23 @@
-import React from "react";
-// import * as THREE from "three";
-// import { FBXLoader } from "three/examples/jsm/loaders/FBXLoader";
-import { View3D, Box, GLTF, Plane, DirectionalLight } from "@standard/view";
+import React, { useEffect, useRef } from "react";
+import * as THREE from "three";
+import {
+  View3D,
+  GLTF,
+  Box,
+  DirectionalLight,
+  useViewContext,
+  useAnimationFrame,
+} from "@standard/view";
 import FBX from "./FBX";
 
 const View = () => {
-  // const loader = new FBXLoader();
-  // loader.load("fbx/Samba Dancing.fbx", obj => {
-  //   const mixer = new THREE.AnimationMixer(obj);
-  //   const action = mixer.clipAction(obj.animation[0]);
-  //   action.play();
-  //   obj.traverse(child => {
-  //     if (child.isMesh) {
-  //       child.castShadow = true;
-  //       child.receiveShadow = true;
-  //     }
-  //   });
-
-  //   // scene.add(obj);
-  // });
-
   return (
-    <View3D orbitControls backgroundColor="red">
+    <View3D orbitControls camera={{ position: [0, 100, 300] }}>
       <DirectionalLight />
-      <Box
-        color="white"
-        hoverColor="blue"
-        onClick={() => console.log("clicked")}
-        textureURL="gsball.png"
-      />
       <FBX fbxURL="fbx/Samba Dancing.fbx" />
-      <GLTF gltfURL="gltf/flamingo.glb" />
+      {/* <FBX /> */}
+      {/* <Box /> */}
+      {/* <GLTF gltfURL="gltf/flamingo.glb" /> */}
     </View3D>
   );
 };

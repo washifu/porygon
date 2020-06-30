@@ -1,5 +1,4 @@
 import React from "react";
-import logo from "./logo.svg";
 import "bootswatch/dist/lux/bootstrap.min.css";
 import View from "./components/View";
 import "./App.css";

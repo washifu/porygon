@@ -13,6 +13,11 @@
   }
 }
 
+.App canvas {
+  width: stretch;
+  height: stretch;
+}
+
 .App-header {
   background-color: #282c34;
   display: flex;
@@ -21,11 +26,6 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
-}
-
-.App canvas {
-  width: stretch;
-  height: stretch;
 }
 
 .App-link {
