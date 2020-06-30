@@ -1,6 +1,7 @@
 {
   "name": "porygon",
   "version": "0.1.0",
+  "homepage": "http://washifu.github.io/porygon/",
   "private": true,
   "dependencies": {
     "@standard/view": "^1.0.3",
