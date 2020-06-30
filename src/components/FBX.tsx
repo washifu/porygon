@@ -7,7 +7,6 @@ import exact from "prop-types-exact";
 import {
   Label,
   Group,
-  GroupProps,
   GroupPropTypes,
   useViewContext,
   useAnimationFrame,
@@ -15,7 +14,7 @@ import {
 
 const { useEffect, useMemo, useRef, memo } = React;
 
-interface FBXProps extends GroupProps {
+interface FBXProps {
   fbxPath?: string;
   fbxURL: string;
   view3DEnvMap: boolean;
@@ -108,8 +107,10 @@ function loadFBX({
 
       // Animation
       mixer.current = new THREE.AnimationMixer(fbx);
-      const action = mixer.current.clipAction?.(fbx.animations?.[actionIndex]);
-      action?.play();
+      if (fbx.animations?.length > 0) {
+        const action = mixer.current.clipAction(fbx.animations[actionIndex]);
+        action.play();
+      }
 
       // Env Map + Shadows
       fbx.traverse(mesh => {
@@ -224,11 +225,6 @@ const FBX: React.FunctionComponent<FBXProps> = function FBX({
   useAnimationFrame(function updateMixer() {
     const delta = clock.getDelta();
     mixer.current?.update(delta);
-    if (!mixer.current) {
-      console.log("no mixer");
-    } else {
-      console.log("yes mixer");
-    }
   });
 
   return (
